@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="display">
+        <div class="container">
+            <div class="left">
+                <img src="Images/left.svg" alt="">
+            </div>
+            <div class="right">
+                <div class="signup">
+                    <p>Sign Up</p>
+                </div>
+                <form action="#">
+                    <div class="combined">
+                        <div class="field name">
+                            <label class="tags" for="">Name</label>
+                            <input id="name" type="text" onblur="valName()" placeholder="Full name">
+                            <label id="nameError" class="errorMsg" for="">*Enter valid name</label>
+                        </div>
+                        <div class="field username">
+                            <label class="tags" for="">Username</label>
+                            <input id="username" type="text" onblur="valUname()" placeholder="at-z and 0-9">
+                            <label id="unameError" class="errorMsg" for="">*only smallcase and 0-9</label>
+                        </div>
+                    </div>
+                    <div class="field email">
+                        <label class="tags" for="">Email</label>
+                        <input id="email" type="text" onblur="valEmail()" placeholder="emailid@abc.com">
+                        <!-- <img src="Images/error.svg" alt=""> -->
+                        <label id="emailError" class="errorMsg" for="">*Enter valid email</label>
+                    </div>
+                    <div class="field password">
+                        <label class="tags" for="">Password</label>
+                        <input id="password" type="password" onblur="valPass()" placeholder="8-20 characters [a-z,A-Z,0-9,special]">
+                        <i class="bi bi-eye-slash" id="togglePassword"></i>
+                        <label id="passError" class="errorMsg" for="">*must be 8-20 characters with one lowercase, uppercase and special character</label>
+                    </div>
+                    <div class="submit field">
+                        <button onclick="validate()">Sign up</button>
+                    </div>
+                </form>
+
+                <div class="divider">
+                    <div class="horizontal"></div>
+                    <span class="or">or</span>
+                    <div class="horizontal"></div>
+                </div>
+                
+                <div class="other">
+                    <div class="options google">
+                        <img src="Images/google.svg" alt="">
+                        <span>Sign up with Google</span>
+                    </div>
+                    <div class="options facebook">
+                        <img src="Images/facebook.svg" alt="">
+                        <span>Sign up with Facebook</span>
+                    </div>
+                </div>
+
+                <div class="customer">
+                    <span class="ques">Already a customer?</span>
+                    <span class="orange">Log in</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

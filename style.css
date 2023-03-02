@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.display {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#ffffff, #b9c4df);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: #ffffff;
+    display: flex;
+    width: 700px;
+    border-radius: 1em;
+    /* height: 70%; */
+    max-width: 900px;
+    min-width: 700px;
+    box-shadow: 0px 0px 20px 0 #b2bad1;
+}
+.left {
+    width: 45%;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left img {
+    width: 70%;
+    margin: 2em;
+    min-width: 350px;
+    /* border: 1px solid black; */
+}
+.right {
+    width: 60%;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background: gold; */
+    flex-direction: column;
+    border-radius: 1em;
+}
+.right .signup {
+    width: 70%;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+.right p {
+    font-size: 2.7em;
+    font-weight: 700;
+    color: #281865;
+}
+.combined {
+    display: flex;
+}
+.combined input {
+    width: 144px !important;
+}
+.right .field {
+    margin: 0em 1em;
+    margin-bottom: 1em;
+    width: 90%;
+}
+.right .tags {
+    margin-left: 0.5em;
+    font-size: 0.65em;
+    display: block;
+    color: #281865;
+}
+.right form {
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right form input {
+    /* margin: 0.3em 2em 2em 2em; */
+    padding: 0.5em 1em;
+    /* border: none; */
+    border-radius: 5px;
+    width: 100%;
+    background: #fafbff;
+    border: 1px solid #e4e4e4;
+    font-size: 0.8em;
+}
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit button {
+    margin-top: 1em;
+    width: 150px;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 2.2em;
+    background: #ff725e;
+    color: #fafbff;
+    transition: 0.2s;
+    box-shadow: 0px 4px 7px #fda79c;
+}
+.submit button:hover {
+    background-color: #fea195;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em 0em;
+    margin-right: 3em;
+    margin-left: 1em;
+}
+.divider .horizontal {
+    width: 40%;
+    background: #281865;
+    /* border: 0.5px solid #281865; */
+    height: 1px;
+}
+.divider .or {
+    font-size: 0.7em;
+    margin: 0 1em;
+
+}
+
+
+.other {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 2em;
+}
+.options {
+    font-size: 0.5em;
+    margin: 1em;
+    margin-bottom: 3em;
+    border: 1px solid #e4e4e4;
+    padding: 1em 2em;
+    border-radius: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+.options img {
+    width: 12px;
+    margin-right: 5px;
+}
+.options:hover {
+    background: #e4e4e4;
+    cursor: pointer;
+}
+
+.customer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.3em;
+    margin-bottom: 3em;
+    font-size: 0.6em;
+    margin-right: 2em;
+}
+.customer .orange {
+    color: #ff725e;
+    margin-left: 5px;
+    transition: 0.2s;
+}
+.customer .orange:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.errorMsg {
+    color: #ff0000;
+    /* font-size: 0.5em; */
+    /* display: none ; */
+    margin-left: 0.5em;
+    font-size: 0.65em;
+    /* display: block; */
+    /* color: #281865; */
+    display: none;
+}
+.show {
+    display: block;
+}
+form i {
+    margin-left: -30px;
+    cursor: pointer;
+}
+.right form input {
+    font-size: 0.9em;
+}
+input::placeholder {
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        min-width: 300px;
+        margin-top: 3em;
+    }
+    .left {
+        width: 100%;
+        /* height: inherit; */
+    }
+    .left img {
+        display: none;
+    }
+    .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .right .signup {
+        margin-right: 0;
+        text-align: center;
+        margin-left: 0;
+    }
+    .right form {
+        margin: 0;
+    }
+    .right .divider {
+        margin: 0;
+    }
+    .right .other {
+        margin: 0;
+    }
+
+    .right .customer {
+        margin-right: 0;
+    }
+}
+
